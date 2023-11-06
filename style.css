@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-bottom: 7px;
+    padding: 0;
+}
+
+header {
+    background-color: #4b4a4a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.video-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.video-item img {
+    max-width: 100%;
+}
+
+.video-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.video-detail {
+    text-align: center;
+    padding: 20px;
+}
+
+video {
+    max-width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video-item {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDSTube</title>
+    <link rel="stylesheet" href="style.css">
+    
+<body>
+    <header>
+        <div class="container">
+            <h1>TDSTube</h1>
+            <input type="text" class="search-bar" placeholder="Pesquisar vídeos">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="video-grid">
+            <!-- Vídeo 1 -->
+            <div class="video-item" onclick="showVideoDetail('video1.mp4')">
+                
+                <video src="https://storage.googleapis.com/future-apis.appspot.com/1.mp4
+                " controls autoplay muted loop width="100%"></video> 
+                <div class="video-title">Título do Vídeo 1</div>   
+
+            </div>
+            <!-- Vídeo 2 (com o link fornecido) -->
+            <div class="video-item" onclick="showVideoDetail('video1.mp4')">
+                
+                <video src="https://storage.googleapis.com/future-apis.appspot.com/2.mp4
+                " controls autoplay muted loop width="100%"></video> 
+                <div class="video-title">Título do Vídeo 2</div>   
+
+            </div>
+            <!-- Vídeo 3 -->
+
+            <div class="video-item" onclick="showVideoDetail('video1.mp4')">
+                
+                <video src="https://storage.googleapis.com/future-apis.appspot.com/3.mp4
+                " controls autoplay muted loop width="100%"></video> 
+                <div class="video-title">Título do Vídeo 3</div>   
+
+            </div>
+
+            <div class="video-item" onclick="showVideoDetail('video1.mp4')">
+                
+                <video src="https://storage.googleapis.com/future-apis.appspot.com/4.mp4
+                " controls autoplay muted loop width="100%"></video> 
+                <div class="video-title">Título do Vídeo 4</div>   
+
+            </div>
+
+            <div class="video-item" onclick="showVideoDetail('video1.mp4')">
+                
+                <video src="https://storage.googleapis.com/future-apis.appspot.com/5.mp4
+                " controls autoplay muted loop width="100%"></video> 
+                <div class="video-title">Título do Vídeo 5</div>   
+
+            </div>
+
+            <div class="video-item" onclick="showVideoDetail('video1.mp4')">
+                
+                <video src="https://storage.googleapis.com/future-apis.appspot.com/6.mp4
+                " controls autoplay muted loop width="100%"></video> 
+                <div class="video-title">Título do Vídeo 6</div>   
+
+            </div>
+
+            <div class="video-item" onclick="showVideoDetail('video1.mp4')">
+                
+                <video src="https://storage.googleapis.com/future-apis.appspot.com/7.mp4
+                " controls autoplay muted loop width="100%"></video> 
+                <div class="video-title">Título do Vídeo 7</div>   
+
+            </div>
+
+            <div class="video-item" onclick="showVideoDetail('video1.mp4')">
+                
+                <video src="https://storage.googleapis.com/future-apis.appspot.com/8.mp4
+                " controls autoplay muted loop width="100%"></video> 
+                <div class="video-title">Título do Vídeo 8</div>   
+
+            </div>
+            <!-- Adicione mais vídeos aqui -->
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>Volte sempre</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para mostrar a tela de detalhe do vídeo -->
+    <script>
+        function showVideoDetail(videoSrc) {
+            const videoDetail = document.querySelector('.video-detail');
+            videoDetail.innerHTML = `
+                <h2>Título do Vídeo</h2>
+                <video controls autoplay>
+                    <source src="${videoSrc}" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            `;
+        }
+    </script>
+</body>
+</html>
